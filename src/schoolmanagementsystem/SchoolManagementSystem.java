@@ -17,9 +17,9 @@ public class SchoolManagementSystem {
         // TODO code application logic here
         logInPage LP= new logInPage();
 //       
-//        LP.setVisible(true);
-//        LP.setResizable(false);
-//        LP.setDefaultCloseOperation(LP.DO_NOTHING_ON_CLOSE);
+        LP.setVisible(true);
+        LP.setResizable(false);
+        LP.setDefaultCloseOperation(LP.DO_NOTHING_ON_CLOSE);
         
         //StudentProfile SP= new StudentProfile();
        
