@@ -49,8 +49,8 @@ public class StudentProfile extends javax.swing.JFrame {
         attendance_btn = new javax.swing.JPanel();
         ind_4 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        close_btn = new javax.swing.JButton();
         logOut = new javax.swing.JButton();
+        close_btn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel2 = new javax.swing.JPanel();
@@ -290,21 +290,9 @@ public class StudentProfile extends javax.swing.JFrame {
 
         jPanel1.add(attendance_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 390, 240, 60));
 
-        close_btn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/schoolmanagementsystem/image/close.png"))); // NOI18N
-        close_btn.setBorder(null);
-        close_btn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        close_btn.setOpaque(false);
-        close_btn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                close_btnActionPerformed(evt);
-            }
-        });
-        jPanel1.add(close_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 5, 30, 30));
-
         logOut.setFont(new java.awt.Font("Comic Sans MS", 1, 20)); // NOI18N
         logOut.setForeground(new java.awt.Color(255, 255, 255));
         logOut.setText("LogOut");
-        logOut.setActionCommand("LogOut");
         logOut.setBorder(null);
         logOut.setBorderPainted(false);
         logOut.setContentAreaFilled(false);
@@ -316,8 +304,19 @@ public class StudentProfile extends javax.swing.JFrame {
         });
         jPanel1.add(logOut, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 670, -1, 30));
 
+        close_btn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/schoolmanagementsystem/image/close.png"))); // NOI18N
+        close_btn.setBorder(null);
+        close_btn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        close_btn.setOpaque(false);
+        close_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                close_btnActionPerformed(evt);
+            }
+        });
+        jPanel1.add(close_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 5, 30, 30));
+
         jLabel1.setBackground(new java.awt.Color(19, 10, 52));
-        jLabel1.setIcon(new javax.swing.ImageIcon("E:\\school\\Capture.PNG")); // NOI18N
+        jLabel1.setOpaque(true);
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 250, 720));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);

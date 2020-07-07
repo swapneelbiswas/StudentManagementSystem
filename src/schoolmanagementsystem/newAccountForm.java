@@ -134,13 +134,16 @@ public class newAccountForm extends javax.swing.JFrame {
         });
         jPanel2.add(back_btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 850, 90, 70));
 
-        signupButton.setText("Sign Up");
+        signupButton.setBorder(null);
+        signupButton.setBorderPainted(false);
+        signupButton.setContentAreaFilled(false);
+        signupButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         signupButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 signupButtonActionPerformed(evt);
             }
         });
-        jPanel2.add(signupButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 850, 110, 70));
+        jPanel2.add(signupButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 850, 190, 80));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/schoolmanagementsystem/image/New Account Page.PNG"))); // NOI18N
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 960));
@@ -181,12 +184,12 @@ public class newAccountForm extends javax.swing.JFrame {
 
     private void back_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_back_btnActionPerformed
         // TODO add your handling code here:
-        popUp pU = new popUp();
+        logInPage lP = new logInPage();
 
-        pU.setVisible(true);
-        pU.setResizable(false);
+        lP.setVisible(true);
+        lP.setResizable(false);
 
-        pU.setDefaultCloseOperation(pU.DO_NOTHING_ON_CLOSE);
+        lP.setDefaultCloseOperation(lP.DO_NOTHING_ON_CLOSE);
 
         newAccountForm nF = new newAccountForm();
         dispose();
